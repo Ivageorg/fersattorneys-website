@@ -1,0 +1,256 @@
+/* ===== Root Variables for Colors & Fonts ===== */
+:root {
+  --color-navy: #1b2a49;         /* Dark Navy */
+  --color-offwhite: #f9f9f9;     /* Off-white */
+  --color-beige: #f0eee9;        /* Greyish-beige accent */
+  --color-accent: #4f6cb0;       /* Example accent (lighter navy or complementary) */
+  --font-primary: 'Lato', sans-serif; /* Example modern, professional font */
+}
+
+/* Reset some default margins/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: var(--font-primary);
+  color: var(--color-navy);
+  background-color: var(--color-offwhite);
+  line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--color-navy);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  transition: top 0.3s ease;
+  z-index: 999;
+}
+
+.nav-logo img {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--color-beige);
+}
+
+.nav-links .active {
+  text-decoration: underline;
+}
+
+.btn-cta {
+  background-color: var(--color-beige);
+  color: var(--color-navy);
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn-cta:hover {
+  background-color: #dfdccf;
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+  margin-top: 70px; /* Offset for fixed navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: var(--color-beige);
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.btn-primary {
+  background-color: var(--color-navy);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent);
+}
+
+.hero-image img {
+  width: 400px;
+  border-radius: 8px;
+}
+
+/* ===== INTRO SECTION ===== */
+.intro-section,
+.services-section,
+.testimonials-section,
+.appointment-section,
+.contact-section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro-section h2,
+.services-section h2,
+.testimonials-section h2,
+.appointment-section h2,
+.contact-section h2 {
+  margin-bottom: 1rem;
+}
+
+/* ===== SERVICES SECTION ===== */
+.services-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.service-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* ===== TESTIMONIALS SECTION ===== */
+.testimonials-section blockquote {
+  font-style: italic;
+  quotes: "“" "”" "‘" "’";
+}
+
+.testimonials-section blockquote:before {
+  content: open-quote;
+}
+
+.testimonials-section blockquote:after {
+  content: close-quote;
+}
+
+.testimonial {
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-left: 4px solid var(--color-accent);
+  border-radius: 4px;
+}
+
+/* ===== APPOINTMENT SECTION ===== */
+.appointment-section p {
+  margin-bottom: 1.5rem;
+}
+
+/* ===== CONTACT SECTION ===== */
+.intake-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.intake-form label {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.intake-form input,
+.intake-form textarea {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.intake-form button[type="submit"] {
+  margin-top: 1rem;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: var(--color-navy);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+}
+
+.footer-content p {
+  margin: 0.5rem 0;
+}
+
+/* ===== BLOG PAGE STYLING ===== */
+.blog-header {
+  margin-top: 70px; /* offset for navbar */
+  background-color: var(--color-beige);
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.blog-posts-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.blog-post {
+  background-color: #fff;
+  border-left: 4px solid var(--color-accent);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.blog-post h2 {
+  margin-bottom: 0.5rem;
+}
+
+.blog-post .meta {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+  .hero-content, .hero-image {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+}
