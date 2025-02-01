@@ -1,256 +1,110 @@
-/* ===== Root Variables for Colors & Fonts ===== */
-:root {
-  --color-navy: #1b2a49;         /* Dark Navy */
-  --color-offwhite: #f9f9f9;     /* Off-white */
-  --color-beige: #f0eee9;        /* Greyish-beige accent */
-  --color-accent: #4f6cb0;       /* Example accent (lighter navy or complementary) */
-  --font-primary: 'Lato', sans-serif; /* Example modern, professional font */
-}
-
-/* Reset some default margins/padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body Styling */
+/* General Styles */
 body {
-  font-family: var(--font-primary);
-  color: var(--color-navy);
-  background-color: var(--color-offwhite);
-  line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-/* ===== NAVBAR ===== */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: var(--color-navy);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 2rem;
-  transition: top 0.3s ease;
-  z-index: 999;
+/* Header Styles */
+header {
+    background: #8B5E3C;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.nav-logo img {
-  height: 40px;
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background: #6E472C;
+    margin: 0;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
+nav ul li {
+    display: inline;
+    padding: 15px 25px;
 }
 
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s ease;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.nav-links a:hover {
-  color: var(--color-beige);
+/* Section Styles */
+section {
+    padding: 60px 10%;
+    text-align: center;
 }
 
-.nav-links .active {
-  text-decoration: underline;
+h2 {
+    font-size: 28px;
+    color: #8B5E3C;
+    text-transform: uppercase;
 }
 
-.btn-cta {
-  background-color: var(--color-beige);
-  color: var(--color-navy);
-  padding: 0.3rem 0.7rem;
-  border-radius: 4px;
-  font-weight: 600;
-  transition: background-color 0.2s ease;
+h3 {
+    font-size: 22px;
+    color: #6E472C;
 }
 
-.btn-cta:hover {
-  background-color: #dfdccf;
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: auto;
 }
 
-/* ===== HERO SECTION ===== */
-.hero-section {
-  margin-top: 70px; /* Offset for fixed navbar */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4rem 2rem;
-  background-color: var(--color-beige);
+/* Buttons */
+button {
+    background: #8B5E3C;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
-.hero-content {
-  max-width: 50%;
+button:hover {
+    background: #6E472C;
 }
 
-.hero-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+/* Form Styling */
+form {
+    background: #fff;
+    padding: 30px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 1.2rem;
+form label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0 5px;
 }
 
-.btn-primary {
-  background-color: var(--color-navy);
-  color: #fff;
-  padding: 0.6rem 1rem;
-  text-decoration: none;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
 }
 
-.btn-primary:hover {
-  background-color: var(--color-accent);
-}
-
-.hero-image img {
-  width: 400px;
-  border-radius: 8px;
-}
-
-/* ===== INTRO SECTION ===== */
-.intro-section,
-.services-section,
-.testimonials-section,
-.appointment-section,
-.contact-section {
-  padding: 3rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.intro-section h2,
-.services-section h2,
-.testimonials-section h2,
-.appointment-section h2,
-.contact-section h2 {
-  margin-bottom: 1rem;
-}
-
-/* ===== SERVICES SECTION ===== */
-.services-grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-
-.service-card {
-  background-color: #fff;
-  padding: 1.5rem;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-}
-
-/* ===== TESTIMONIALS SECTION ===== */
-.testimonials-section blockquote {
-  font-style: italic;
-  quotes: "“" "”" "‘" "’";
-}
-
-.testimonials-section blockquote:before {
-  content: open-quote;
-}
-
-.testimonials-section blockquote:after {
-  content: close-quote;
-}
-
-.testimonial {
-  margin-bottom: 1.5rem;
-  background-color: #fff;
-  padding: 1rem;
-  border-left: 4px solid var(--color-accent);
-  border-radius: 4px;
-}
-
-/* ===== APPOINTMENT SECTION ===== */
-.appointment-section p {
-  margin-bottom: 1.5rem;
-}
-
-/* ===== CONTACT SECTION ===== */
-.intake-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-}
-
-.intake-form label {
-  margin-top: 1rem;
-  margin-bottom: 0.3rem;
-}
-
-.intake-form input,
-.intake-form textarea {
-  padding: 0.5rem;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-.intake-form button[type="submit"] {
-  margin-top: 1rem;
-}
-
-/* ===== FOOTER ===== */
-.footer {
-  background-color: var(--color-navy);
-  color: #fff;
-  text-align: center;
-  padding: 1rem 2rem;
-  margin-top: 2rem;
-}
-
-.footer-content p {
-  margin: 0.5rem 0;
-}
-
-/* ===== BLOG PAGE STYLING ===== */
-.blog-header {
-  margin-top: 70px; /* offset for navbar */
-  background-color: var(--color-beige);
-  text-align: center;
-  padding: 3rem 2rem;
-}
-
-.blog-posts-section {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 2rem;
-}
-
-.blog-post {
-  background-color: #fff;
-  border-left: 4px solid var(--color-accent);
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.blog-post h2 {
-  margin-bottom: 0.5rem;
-}
-
-.blog-post .meta {
-  color: #666;
-  font-size: 0.9rem;
-}
-
-/* ===== Responsive Design ===== */
-@media (max-width: 768px) {
-  .hero-section {
-    flex-direction: column;
-  }
-  .hero-content, .hero-image {
-    max-width: 100%;
-    margin-bottom: 2rem;
-  }
+/* Footer */
+footer {
+    background: #6E472C;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    margin-top: 40px;
 }
