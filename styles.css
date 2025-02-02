@@ -1,168 +1,151 @@
-/* General Styles */
+/* 1. RESET & GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f8f4e3; /* Cool beige */
-    color: #333;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0B1F2B; /* Dark Navy */
+  color: #f5f5f5; /* Light text for contrast */
+  line-height: 1.6;
 }
 
-/* Header Styles */
-header {
-    background: #2c3e50;
-    color: white;
-    padding: 40px;
-    text-align: center;
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: 1px;
+/* 2. HEADER / NAVBAR */
+#main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(11, 31, 43, 0.9); /* Slightly transparent navy */
+  padding: 1rem 2rem;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: top 0.3s ease; /* For hide-on-scroll effect */
 }
 
-nav {
-    background: rgba(44, 62, 80, 0.9);
-    padding: 15px 0;
+.logo-container .logo {
+  height: 50px; /* Adjust as needed */
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 20px;
-    position: relative;
+nav a {
+  text-decoration: none;
+  color: #D4BBA6; /* Beige accent */
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 12px 20px;
-    transition: all 0.3s ease-in-out;
+nav a:hover {
+  color: #ffffff;
 }
 
-nav ul li a:hover {
-    background: #1f618d;
-    border-radius: 8px;
-    color: #f8f4e3;
+/* 3. HERO SECTION */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url('images/subtle-texture.jpg') center/cover, #0B1F2B; /* Example BG texture */
+  text-align: center;
+  padding: 0 2rem;
 }
 
-/* Section Styles */
+.hero-content h1 {
+  font-size: 3rem;
+  color: #D4BBA6; /* Beige accent for the main heading */
+}
+
+.hero-content p {
+  margin: 1rem 0 2rem 0;
+  font-size: 1.2rem;
+  color: #f5f5f5;
+}
+
+.cta-button {
+  background-color: #D4BBA6;
+  color: #0B1F2B;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+  background-color: #bfa085;
+}
+
+.cta-button a {
+  color: #0B1F2B;
+}
+
+/* 4. SECTIONS */
 section {
-    padding: 80px 10%;
-    text-align: center;
-    max-width: 1200px;
-    margin: auto;
-    background: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-h2 {
-    font-size: 34px;
-    color: #2980b9;
-    text-transform: uppercase;
-    margin-bottom: 25px;
-    border-bottom: 4px solid #2980b9;
-    display: inline-block;
-    padding-bottom: 8px;
+section h2 {
+  color: #D4BBA6;
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
-h3 {
-    font-size: 26px;
-    color: #34495e;
-    margin-top: 30px;
+section p,
+section ul,
+section ol {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
 }
 
-p {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #555;
-    margin-bottom: 20px;
+/* Lists */
+.custom-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0.5rem;
+  margin-bottom: 2rem;
+}
+.custom-list li {
+  margin-bottom: 0.75rem;
 }
 
-ul {
-    text-align: left;
-    list-style: none;
-    margin: 20px auto;
-    padding: 0;
-    max-width: 800px;
+/* Practice Areas */
+.practice-area {
+  margin-bottom: 2rem;
+}
+.practice-area h3 {
+  color: #bfa085;
+  margin-top: 1.5rem;
+}
+.practice-area ul {
+  margin-left: 1.5rem;
 }
 
-ul li {
-    font-size: 18px;
-    margin-bottom: 12px;
-    padding-left: 25px;
-    position: relative;
+/* 5. FADE-IN CLASS */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-ul li:before {
-    content: '\f058';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    position: absolute;
-    left: 0;
-    color: #2980b9;
-}
-
-/* Buttons */
-button {
-    background: #2980b9;
-    color: white;
-    border: none;
-    padding: 14px 28px;
-    font-size: 20px;
-    cursor: pointer;
-    margin-top: 25px;
-    transition: all 0.3s ease-in-out;
-    border-radius: 8px;
-}
-
-button:hover {
-    background: #1f618d;
-    color: #f8f4e3;
-}
-
-/* Form Styling */
-form {
-    background: white;
-    padding: 40px;
-    max-width: 600px;
-    margin: auto;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
-}
-
-form label {
-    display: block;
-    text-align: left;
-    font-weight: bold;
-    margin: 12px 0 6px;
-}
-
-form input, form select, form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    margin-bottom: 18px;
-    border-radius: 6px;
-}
-
-form textarea {
-    height: 120px;
-}
-
-/* Footer */
+/* 6. FOOTER */
 footer {
-    background: #34495e;
-    color: white;
-    text-align: center;
-    padding: 30px;
-    font-size: 18px;
-    margin-top: 50px;
+  background-color: #0B1F2B;
+  text-align: center;
+  padding: 2rem;
+  color: #D4BBA6;
+  position: relative;
 }
