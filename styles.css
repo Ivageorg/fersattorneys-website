@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #f8f9fa;
     color: #333;
     margin: 0;
@@ -10,7 +10,7 @@ body {
 
 /* Header Styles */
 header {
-    background: #8B5E3C;
+    background: #2c3e50;
     color: white;
     padding: 20px;
     text-align: center;
@@ -23,7 +23,7 @@ nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
-    background: #6E472C;
+    background: #34495e;
     margin: 0;
     padding: 10px 0;
 }
@@ -43,7 +43,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #8B5E3C;
+    background: #2980b9;
     border-radius: 5px;
 }
 
@@ -57,17 +57,17 @@ section {
 
 h2 {
     font-size: 32px;
-    color: #8B5E3C;
+    color: #2980b9;
     text-transform: uppercase;
     margin-bottom: 20px;
-    border-bottom: 3px solid #8B5E3C;
+    border-bottom: 3px solid #2980b9;
     display: inline-block;
     padding-bottom: 5px;
 }
 
 h3 {
     font-size: 24px;
-    color: #6E472C;
+    color: #34495e;
     margin-top: 20px;
 }
 
@@ -78,7 +78,7 @@ p {
 
 ul {
     text-align: left;
-    list-style: square;
+    list-style: none;
     margin: 20px auto;
     padding: 0;
     max-width: 800px;
@@ -87,11 +87,22 @@ ul {
 ul li {
     font-size: 18px;
     margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li:before {
+    content: '\f058';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: #2980b9;
 }
 
 /* Buttons */
 button {
-    background: #8B5E3C;
+    background: #2980b9;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -103,7 +114,7 @@ button {
 }
 
 button:hover {
-    background: #6E472C;
+    background: #1f618d;
 }
 
 /* Form Styling */
@@ -137,7 +148,7 @@ form textarea {
 
 /* Footer */
 footer {
-    background: #6E472C;
+    background: #34495e;
     color: white;
     text-align: center;
     padding: 20px;
