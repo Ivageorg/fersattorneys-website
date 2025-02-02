@@ -1,94 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fers Attorneys</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fers Attorneys</title>
+  <!-- Example Google Font (use one close to your logo font) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Fers Attorneys</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#practice-areas">Practice Areas</a></li>
-                <li><a href="#team">Meet the Team</a></li>
-                <li><a href="#appointment">Book an Appointment</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Fers Attorneys is a premier full-service law firm headquartered in Nigeria, dedicated to delivering comprehensive legal solutions that address the diverse and evolving needs of our clients in today’s dynamic global environment.</p>
-        <h3>Founder’s Message</h3>
-        <p>Fers Attorneys was founded with a vision to transform the legal landscape and provide innovative legal solutions. Our commitment to excellence ensures that clients receive tailored, world-class counsel.</p>
-        <h3>Company History</h3>
-        <p>Fers Attorneys was established during the COVID-19 pandemic to bridge the gap in legal accessibility. Our founder, Ferdinand Nwobodo, leveraged his extensive experience to create a modern, technology-driven legal practice.</p>
-    </section>
-    
-    <section id="practice-areas">
-        <h2>Practice Areas</h2>
-        <ul>
-            <li>Corporate & Commercial Law</li>
-            <li>Property & Real Estate</li>
-            <li>Civil Litigation & Debt Recovery</li>
-            <li>Immigration Law</li>
-            <li>Intellectual Property & Technology</li>
-            <li>Tax & Financial Advisory</li>
-            <li>International & Cross-Border Services</li>
-            <li>Estate Planning & Succession</li>
-            <li>Energy & Natural Resources</li>
-        </ul>
-    </section>
-    
-    <section id="team">
-        <h2>Meet the Team</h2>
-        <p>Our team of experienced professionals is committed to providing world-class legal services. Key members include:</p>
-        <ul>
-            <li><strong>Ferdinand Nwobodo</strong> - Managing Partner</li>
-            <li><strong>Sandra Chude</strong> - Partner</li>
-            <li><strong>Dolapo Akinboro</strong> - Senior Associate</li>
-        </ul>
-    </section>
-    
-    <section id="appointment">
-        <h2>Book an Appointment</h2>
-        <form action="https://calendar.google.com/calendar/u/0/r/eventedit" method="get" target="_blank">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="text" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="details" required>
-            
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="details" required>
-            
-            <label for="date">Preferred Date & Time:</label>
-            <input type="datetime-local" id="date" name="dates" required>
-            
-            <label for="service">Type of Consultation:</label>
-            <select id="service" name="details">
-                <option value="Corporate Law">Corporate Law</option>
-                <option value="Real Estate Law">Real Estate Law</option>
-                <option value="Litigation & Dispute Resolution">Litigation & Dispute Resolution</option>
-                <option value="Immigration Law">Immigration Law</option>
-                <option value="Intellectual Property">Intellectual Property</option>
-            </select>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="details"></textarea>
-            
-            <button type="submit">Schedule Appointment</button>
-        </form>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: contact@fersattorneys.com</p>
-        <p>Phone: +234 000 000 0000</p>
-    </section>
+
+<!-- HEADER / NAVBAR -->
+<header id="main-header">
+  <div class="logo-container">
+    <!-- Replace with your actual logo image file -->
+    <img src="images/fers-attorneys-logo.png" alt="FERS Attorneys Logo" class="logo"/>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#history">History</a></li>
+      <li><a href="#vision">Vision & Mission</a></li>
+      <li><a href="#practice-areas">Practice Areas</a></li>
+      <li><a href="#team">Meet the Team</a></li>
+      <li><a href="#unique-edge">Unique Edge</a></li>
+      <li><a href="#appointment">Appointment</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section id="hero">
+  <div class="hero-content">
+    <h1>Fers Attorneys</h1>
+    <p>Redefining Legal Practice for a Dynamic World</p>
+    <button class="cta-button">Learn More</button>
+  </div>
+</section>
+
+<!-- ABOUT US SECTION -->
+<section id="about" class="fade-in">
+  <h2>About Us</h2>
+  <p>
+    Fers Attorneys is a premier full-service law firm headquartered in Nigeria, 
+    dedicated to delivering comprehensive legal solutions that address the diverse 
+    and evolving needs of our clients in today’s dynamic global environment. Our 
+    expertise spans a broad spectrum of practice areas, empowering businesses, 
+    individuals, and institutions to navigate complex legal landscapes with 
+    confidence and precision.
+  </p>
+  <p>
+    At Fers Attorneys, we leverage cutting-edge technology and innovative 
+    strategies to redefine the delivery of legal services. Our commitment to 
+    excellence ensures that clients receive tailored, world-class counsel that 
+    transcends geographical boundaries and complexity. Whether dealing with local 
+    matters or international transactions, our solutions are designed to meet the 
+    highest standards of quality and efficiency.
+  </p>
+  <p>
+    Positioned at the forefront of the legal profession, Fers Attorneys combines 
+    deep local expertise with a global perspective. Our approach is rooted in 
+    integrity, innovation, and a steadfast focus on client success, making us a 
+    trusted partner in tackling today’s most pressing legal and regulatory 
+    challenges.
+  </p>
+</section>
+
+<!-- HISTORY + FOUNDER’S MESSAGE -->
+<section id="history" class="fade-in">
+  <h2>Founder’s Message & Company History</h2>
+  <p>
+    Fers Attorneys was born out of a profound commitment to transform the legal 
+    landscape during one of the most challenging periods in recent history—the 
+    COVID-19 pandemic. As the global crisis forced widespread office closures and 
+    disrupted traditional legal service delivery, it exposed significant gaps in 
+    accessibility and efficiency. Witnessing the struggles faced by clients and legal 
+    professionals alike, our founder, <strong>Ferdinard Nwobodo</strong>, a seasoned 
+    corporate and litigation lawyer with extensive international credentials, was 
+    inspired to create a law firm that could bridge these gaps and redefine the future 
+    of legal practice.
+  </p>
+  <p>
+    Armed with an LLB from Birmingham City University, UK, and certification in Fraud 
+    Investigation Management from Coventry University, Ferdinard brought a unique 
+    blend of global insight and local expertise to the table. Drawing on his 
+    experiences working with renowned law firms and his passion for innovation, he 
+    envisioned a modern, technology-driven legal practice designed to transcend 
+    traditional constraints to provide seamless, high-quality legal services.
+  </p>
+  <p>
+    From virtual consultations to streamlined case management, the firm was built to 
+    ensure that clients could access expert counsel without disruption, regardless of 
+    their location or the complexity of their needs. This founding principle of 
+    resilience and innovation continues to drive us today. It shapes our approach to 
+    legal practice, guiding our commitment to excellence, flexibility, and 
+    client-focused service delivery.
+  </p>
+  <p>
+    At Fers Attorneys, we are not just responding to the challenges of a changing 
+    world—we are redefining how legal services are delivered for generations to come.
+  </p>
+</section>
+
+<!-- VISION & MISSION -->
+<section id="vision" class="fade-in">
+  <h2>Our Vision</h2>
+  <p>
+    To establish Fers Attorneys as a transformative leader in the legal profession, 
+    redefining traditional practice models by harnessing the power of technology, 
+    promoting accessibility, and driving client-focused innovation. We strive to 
+    empower our clients with unparalleled legal expertise that enables them to excel 
+    in an increasingly complex and interconnected global environment.
+  </p>
+
+  <h2>Our Mission</h2>
+  <ul class="custom-list">
+    <li>
+      <strong>Comprehensive:</strong> Providing a one-stop solution for all legal 
+      needs, ensuring that our clients receive seamless and holistic support across 
+      diverse practice areas.
+    </li>
+    <li>
+      <strong>Innovative:</strong> Leveraging technology to streamline processes, 
+      enhance accessibility, and deliver cutting-edge solutions.
+    </li>
+    <li>
+      <strong>Client-Centric:</strong> Developing bespoke legal strategies that 
+      reflect each client’s unique goals and challenges, fostering trust, 
+      collaboration, and long-term success.
+    </li>
+  </ul>
+
+  <h2>Core Values</h2>
+  <ol class="custom-list">
+    <li>
+      <strong>Integrity:</strong> Our unwavering commitment to ethical practices 
+      ensures trust and transparency in all our dealings.
+    </li>
+    <li>
+      <strong>Innovation:</strong> We embrace modern tools and methodologies to 
+      provide cutting-edge solutions.
+    </li>
+    <li>
+      <strong>Excellence:</strong> We pursue perfection in every case, transaction, 
+      and advisory service, ensuring outstanding results for our clients.
+    </li>
+    <li>
+      <strong>Collaboration:</strong> Partnering with clients and stakeholders to 
+      achieve shared goals.
+    </li>
+  </ol>
+</section>
+
+<!-- PRACTICE AREAS -->
+<section id="practice-areas" class="fade-in">
+  <h2>Practice Areas</h2>
+  <p>
+    At Fers Attorneys, we pride ourselves on offering an expansive range of legal 
+    services. Our multidisciplinary expertise ensures that we provide end-to-end 
+    solutions across industries and jurisdictions. Our team of seasoned professionals 
+    ensures meticulous attention to detail, proactive strategies, and seamless 
+    execution.
+  </p>
+
+  <div class="practice-area">
+    <h3>1. Corporate & Commercial Law</h3>
+    <ul>
+      <li><strong>Company Formation & Structuring</strong>: Expert guidance on incorporation, regulatory filings, and drafting shareholder agreements.</li>
+      <li><strong>Corporate Governance</strong>: Advising boards of directors on compliance, bylaws, and best practices.</li>
+      <li><strong>Mergers & Acquisitions</strong>: Comprehensive support, including due diligence, deal structuring, and integration.</li>
+      <li><strong>Commercial Contracts</strong>: Drafting, reviewing, and negotiating contracts to safeguard client interests.</li>
+    </ul>
+  </div>
+
+  <div class="practice-area">
+    <h3>2. Property & Real Estate</h3>
+    <ul>
+      <li><strong>Title Verification</strong>: Ensuring clarity of ownership and authenticity of property documentation.</li>
+      <li><strong>Property Transactions</strong>: Legal oversight for sales, leases, and financing arrangements.</li>
+      <li><strong>Dispute Resolution</strong>: Effective representation in tenancy disputes and enforcement of property rights.</li>
+      <li><strong>Real Estate Development</strong>: Advising on permits, financing, and project compliance.</li>
+    </ul>
+  </div>
+
+  <div class="practice-area">
+    <h3>3. Civil Litigation & Debt Recovery</h3>
+    <ul>
+      <li><strong>Litigation Services</strong>: Representation in commercial, contractual, and tort disputes.</li>
+      <li><strong>Debt Recovery</strong>: Aggressive yet ethical strategies to recover outstanding debts, including court actions and asset seizure.</li>
+      <li><strong>Alternative Dispute Resolution (ADR)</strong>: Expertise in mediation, arbitration, and negotiation for out-of-court settlements.</li>
+    </ul>
+  </div>
+
+  <div class="practice-area">
+    <h3>4. Immigration Law</h3>
+    <ul>
+      <li><strong>Work Permits & Expatriate Quotas</strong>: Facilitating seamless employment for foreign workers.</li>
+      <li><strong>Visa Services</strong>: Assistance with applications, renewals, and residency permits.</li>
+      <li><strong>Naturalisation</strong>: Guiding clients through the process of acquiring Nigerian citizenship.</li>
+      <li><strong>Global Mobility</strong>: Advising multinational corporations on relocating staff to and from Nigeria.</li>
+    </ul>
+  </div>
+
+  <div class="practice-area">
+    <h3>5. Intellectual Property & Technology</h3>
+    <ul>
+      <li><strong>IP Registration & Enforcement</strong>: Protecting trademarks, patents, and copyrights.</li>
+      <li><strong>Technology Contracts</strong>: Drafting IT service agreements, SaaS contracts, and licensing deals.</li>
+      <li><strong>Data Privacy</strong>: Ensuring compliance with Nigeria’s NDPR and international data protection standards.</li>
+    </ul>
+  </div>
+
+  <div class="practice-area">
+    <h3>6. Tax & Financial Advisory</h3>
+    <ul>
+      <li><strong>Tax Planning</strong>: Coordinating tax strategies to optimise financial outcomes for businesses and individuals.</li>
+      <li><strong>Corporate Structuring</strong>: Designing entities for maximum efficiency and liability protection.</li>
+      <li><strong>Wealth Management</strong>: Tailored solutions for high-net-worth individuals.</li>
+    </ul>
+  </div>
+
+  <div class="practice-area">
+    <h3>7. International & Cross-Border Services</h3>
+    <ul>
+      <li><strong>Foreign Direct Investment (FDI)</strong>: Assisting international clients in navigating Nigeria’s regulatory framework.</li>
+      <li><strong>Cross-Border Transactions</strong>: Drafting and negotiating agreements compliant with Nigerian and foreign laws.</li>
+      <li><strong>International Arbitration</strong>: Resolving disputes across jurisdictions with precision and expertise.</li>
+    </ul>
+  </div>
+
+  <div class="practice-area">
+    <h3>8. Estate Planning & Succession</h3>
+    <ul>
+      <li><strong>Wills & Trusts</strong>: Crafting comprehensive estate plans to safeguard family wealth.</li>
+      <li><strong>Family Business Succession</strong>: Ensuring smooth transitions for multi-generational enterprises.</li>
+      <li><strong>Asset Protection</strong>: Strategies to secure assets against legal and financial risks.</li>
+    </ul>
+  </div>
+
+  <div class="practice-area">
+    <h3>9. Energy & Natural Resources</h3>
+    <ul>
+      <li><strong>Oil & Gas</strong>: Regulatory compliance, licensing, and joint venture agreements.</li>
+      <li><strong>Renewable Energy</strong>: Legal advisory for solar, wind, and other sustainable projects.</li>
+      <li><strong>Environmental Compliance</strong>: Ensuring adherence to environmental laws.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- MEET THE TEAM -->
+<section id="team" class="fade-in">
+  <h2>Meet the Team</h2>
+  <p>
+    <!-- Replace with team profiles, photos, and bios -->
+    We are a diverse group of experienced attorneys, paralegals, and support staff 
+    who are committed to delivering exceptional client service. Each team member 
+    brings a unique skill set and industry background, ensuring that we have the 
+    capacity to handle a wide range of legal challenges with precision and care.
+  </p>
+</section>
+
+<!-- OUR UNIQUE EDGE -->
+<section id="unique-edge" class="fade-in">
+  <h2>Our Unique Edge</h2>
+  <ul class="custom-list">
+    <li>
+      <strong>Global Expertise</strong>: Fers Attorneys was founded by professionals 
+      with an international education and experience, seamlessly blending global 
+      insights with local expertise to provide world-class legal solutions.
+    </li>
+    <li>
+      <strong>Technology-Driven Solutions</strong>: Our secure digital platforms 
+      enable efficient client communication, document management, and case tracking, 
+      reducing overhead and enhancing service delivery.
+    </li>
+    <li>
+      <strong>Integrated Services</strong>: Through our partnership with a leading 
+      accounting firm, we offer holistic solutions that combine legal and financial 
+      advisory expertise, delivering unmatched value to our clients.
+    </li>
+    <li>
+      <strong>Client-Centric Approach</strong>: We prioritize each client’s unique 
+      goals, delivering personalized strategies that drive success. Our commitment 
+      to transparent communication ensures that clients remain informed and empowered 
+      throughout their legal journey.
+    </li>
+  </ul>
+  <p>
+    At Fers Attorneys, we are more than legal advisors; we are strategic partners 
+    dedicated to helping our clients navigate challenges, seize opportunities, and 
+    achieve their goals. Our forward-thinking approach ensures that we remain at the 
+    cutting edge of legal practice, providing solutions that are as innovative as 
+    they are effective.
+  </p>
+  <p>
+    By combining global expertise, local insight, and cutting-edge technology, 
+    we are committed to empowering our clients to navigate challenges and 
+    seize opportunities with confidence.
+  </p>
+</section>
+
+<!-- BOOK AN APPOINTMENT -->
+<section id="appointment" class="fade-in">
+  <h2>Book an Appointment</h2>
+  <p>
+    Ready to experience the Fers Attorneys difference? 
+    Schedule a consultation today. Whether you prefer an in-person meeting, 
+    a virtual call, or simply have some initial questions, we’re here to assist.
+  </p>
+  <button class="cta-button">
+    <a href="mailto:info@fersattorneys.com" style="text-decoration: none; color: inherit;">
+      Request a Consultation
+    </a>
+  </button>
+</section>
+
+<!-- CONTACT US -->
+<section id="contact" class="fade-in">
+  <h2>Contact Us</h2>
+  <p>
+    Have questions or need more information? We’re just an email or phone call away.
+  </p>
+  <ul>
+    <li>Email: <a href="mailto:info@fersattorneys.com">info@fersattorneys.com</a></li>
+    <li>Phone: +234 XXX XXX XXXX</li>
+    <li>Address: 1234 Legal Avenue, Lagos, Nigeria</li>
+  </ul>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <p>&copy; <span id="year"></span> Fers Attorneys. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="script.js"></script>
 </body>
 </html>
