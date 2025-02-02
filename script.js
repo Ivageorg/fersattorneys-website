@@ -1,23 +1,38 @@
-// script.js
-
+// 1. Hide/Show Navbar on Scroll
 let lastScrollTop = 0;
-const navbar = document.getElementById('mainNavbar');
+const header = document.getElementById("main-header");
 
-// Adjust this threshold to determine how far the user scrolls
-// before the navbar hides
-const scrollThreshold = 200; 
-
-window.addEventListener('scroll', function() {
-  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-  // Check if user is scrolling down
-  if (currentScroll > lastScrollTop && currentScroll > scrollThreshold) {
-    // Hide navbar
-    navbar.style.top = '-80px';
+window.addEventListener("scroll", () => {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    // Scrolling Down -> hide header
+    header.style.top = "-80px";
   } else {
-    // Show navbar
-    navbar.style.top = '0';
+    // Scrolling Up -> show header
+    header.style.top = "0";
   }
-
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+  lastScrollTop = Math.max(scrollTop, 0);
 });
+
+// 2. Intersection Observer for Fade-In Sections
+const faders = document.querySelectorAll(".fade-in");
+
+const appearOptions = {
+  threshold: 0.1,
+};
+
+const appearOnScroll = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.style.opacity = 1;
+    entry.target.style.transform = "translateY(0)";
+    observer.unobserve(entry.target);
+  });
+}, appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+
+// 3. Update the Footer Year Automatically
+document.getElementById("year").textContent = new Date().getFullYear();
